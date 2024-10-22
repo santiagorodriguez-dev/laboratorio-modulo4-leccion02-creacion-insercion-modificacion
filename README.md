@@ -1,9 +1,17 @@
 
+# Datos finales:
 
-<div style="text-align: center;">
-  <img src="https://github.com/Hack-io-Data/Imagenes/blob/main/01-LogosHackio/logo_naranja@4x.png?raw=true" alt="esquema" />
-</div>
+![imagen](https://github.com/santiagorodriguez-dev/laboratorio-modulo4-leccion02-creacion-insercion-modificacion/blob/main/images/clientes.PNG)
 
+![imagen](https://github.com/santiagorodriguez-dev/laboratorio-modulo4-leccion02-creacion-insercion-modificacion/blob/main/images/detalle_envios.PNG)
+
+![imagen](https://github.com/santiagorodriguez-dev/laboratorio-modulo4-leccion02-creacion-insercion-modificacion/blob/main/images/empleados.PNG)
+
+![imagen](https://github.com/santiagorodriguez-dev/laboratorio-modulo4-leccion02-creacion-insercion-modificacion/blob/main/images/envios.png)
+
+![imagen](https://github.com/santiagorodriguez-dev/laboratorio-modulo4-leccion02-creacion-insercion-modificacion/blob/main/images/proveedores.PNG)
+
+![imagen](https://github.com/santiagorodriguez-dev/laboratorio-modulo4-leccion02-creacion-insercion-modificacion/blob/main/images/regiones.PNG)
 
 # Laboratorio: Gestión de Bases de Datos 
 
