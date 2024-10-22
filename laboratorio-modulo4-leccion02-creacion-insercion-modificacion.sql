@@ -133,5 +133,59 @@ VALUES
     ('Galicia', 'España'),
     ('Castilla', 'España'),
     ('Asturias', 'España');
+   
+ 
+ -- ### Ejercicio 3: Modificación y Actualización de Datos
+
+-- 1. Actualizar el Estado de un Envío. Actualiza el estado del envío con `id_envio = 3` a "Entregado".
+   	UPDATE Envios
+		SET estado = 'Entregado'
+		WHERE id_envio = 3;
+
+-- 2. Modificar el Cargo de un Empleado. Cambia el cargo del empleado con `id_empleado = 5` a "Director de Datos".
+	UPDATE Empleados
+		SET cargo = 'Director de Datos'
+		WHERE id_empleado = 5;
+
+-- 3. Incrementar el Precio Unitario de un Producto. Incrementa en un 10% el precio unitario del producto "Producto A" en la tabla `Detalle_Envíos`.
+	UPDATE Detalle_Envios
+		SET precio_unitario = precio_unitario * 1.10
+		WHERE producto = 'Producto 1';
+
+-- 4. Actualizar la Dirección de un Cliente. Modifica la dirección del cliente con `id_cliente = 2` a "Nueva Calle B, 123".
+	UPDATE Clientes
+		SET direccion = 'Nueva Calle B, 123'
+		WHERE id_cliente = 2;
+
+-- 5. Cambiar el Proveedor de un Envío. Cambia el proveedor del envío con `id_envio = 4` al proveedor con `id_proveedor = 3`.
+	UPDATE Envios
+		SET id_proveedor = 3
+		WHERE id_envio = 4;
+
+-- 6. Actualizar la Cantidad de un Producto en un Envío. Modifica la cantidad del producto "Producto C" en el envío con `id_envio = 2` a 5 unidades.
+	UPDATE Detalle_Envios
+		SET cantidad = 5
+		WHERE id_envio = 2 AND producto = 'Producto 2';
+
+-- 7. Actualizar el Total de un Envío. Incrementa el total del envío con `id_envio = 5` en 50 unidades monetarias.
+	UPDATE Envios
+		SET total = total + 50
+		WHERE id_envio = 5;
+
+-- 8. Modificar el Contacto de un Proveedor. Cambia el contacto del proveedor con `id_proveedor = 2` a "Nuevo Contacto 2".
+	UPDATE Proveedores
+		SET contacto = 'Nuevo Contacto 2'
+		WHERE id_proveedor = 2;
+
+-- 9. Cambiar el País de un Cliente. Actualiza el país del cliente con `id_cliente = 6` a "Portugal".
+	UPDATE Clientes
+		SET pais = 'Portugal'
+		WHERE id_cliente = 6;
+
+-- 10. Actualizar la Fecha de un Envío. Modifica la fecha del envío con `id_envio = 7` a "2024-08-10".
+	UPDATE Envios
+		SET fecha_envio = '2024-08-10'
+		WHERE id_envio = 7;
+
 
    
