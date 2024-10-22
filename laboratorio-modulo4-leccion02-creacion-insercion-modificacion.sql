@@ -188,4 +188,42 @@ VALUES
 		WHERE id_envio = 7;
 
 
+-- ### Ejercicio 4: Eliminación de Datos
+
+-- 1. Añadir una Columna. Añade una columna `fecha_nacimiento` de tipo `DATE` a la tabla `Clientes`.
+	ALTER TABLE Clientes
+		ADD COLUMN fecha_nacimiento DATE;
+
+-- 2. Añadir una Columna. Añade una columna `codigo_postal` de tipo `VARCHAR(10)` a la tabla `Proveedores`.
+	ALTER TABLE Proveedores
+		ADD COLUMN codigo_postal VARCHAR(10);
+
+-- 3. Eliminar una Columna. Elimina la columna `contacto` de la tabla `Proveedores`.
+	ALTER TABLE Proveedores
+		DROP COLUMN contacto;
+
+-- 4. Eliminar una Columna. Elimina la columna `pais` de la tabla `Regiones`.
+	ALTER TABLE Regiones
+		DROP COLUMN pais;
+
+-- 5. Modificar el Tipo de Dato de una Columna. Modifica el tipo de dato de la columna `telefono` en la tabla `Clientes` a `VARCHAR(15)`.
+	ALTER TABLE Clientes
+		ALTER COLUMN telefono TYPE VARCHAR(15);
+
+-- 6. Modificar el Tipo de Dato de una Columna. Modifica el tipo de dato de la columna `total` en la tabla `Envíos` a `NUMERIC(12, 2)`.
+	ALTER TABLE Envios
+		ALTER COLUMN total TYPE NUMERIC(12, 2);
+
+-- 7. Añadir una Columna. Añade una columna `fecha_contrato` de tipo `DATE` a la tabla `Empleados`.
+	ALTER TABLE Empleados
+		ADD COLUMN fecha_contrato DATE;
+	
+-- 8. Eliminar una Columna. Elimina la columna `estado` de la tabla `Envíos`.
+	ALTER TABLE Envios
+		DROP COLUMN estado;
+
+-- 9. Modificar el Nombre de una Columna. Modifica el nombre de la columna `nombre` en la tabla `Empleados` a `nombre_completo`.
+	ALTER TABLE Empleados
+		RENAME COLUMN nombre TO nombre_completo;
+
    
