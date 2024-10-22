@@ -225,5 +225,48 @@ VALUES
 -- 9. Modificar el Nombre de una Columna. Modifica el nombre de la columna `nombre` en la tabla `Empleados` a `nombre_completo`.
 	ALTER TABLE Empleados
 		RENAME COLUMN nombre TO nombre_completo;
+	
 
-   
+-- ### Ejercicio 5: Contesta a las siguientes preguntas usando queries
+
+-- 1. Listar todos los clientes que viven en España.
+	SELECT * FROM Clientes
+		WHERE pais = 'España';
+
+-- 2. Obtener todos los envíos realizados por un empleado específico.
+	SELECT * FROM Envios
+		WHERE id_empleado = 3;
+
+-- 3. Listar todos los productos incluidos en un envío específico.
+	SELECT * FROM Detalle_Envios
+		WHERE id_envio = 3;
+
+-- 4. Encontrar todos los proveedores con un teléfono específico.
+	SELECT * FROM Proveedores
+		WHERE telefono = '902654321';
+
+-- 5. Listar los empleados que tienen un cargo de "Supervisor de Envíos".
+	SELECT * FROM Empleados
+		WHERE cargo = 'Supervisor';
+
+-- 6. Obtener todos los envíos que fueron realizados por el cliente con id_cliente = 5.
+	SELECT * FROM Envios
+		WHERE id_cliente = 5;
+
+-- 7. Listar todas las regiones con su nombre y país.
+--	SELECT nombre, pais  FROM Regiones;
+-- No existe la columna la hemos eliminado previamente.
+
+-- 8. Mostrar todos los productos cuyo precio unitario sea mayor que 50.
+	SELECT * FROM Detalle_Envios
+		WHERE precio_unitario > 50;
+
+-- 9. Obtener todos los envíos realizados el 2024-08-05.
+	SELECT * FROM Envios
+		WHERE fecha_envio = '2024-04-02';
+
+-- 10. Listar todos los clientes que tienen un número de teléfono que comienza con "6003".
+	SELECT * FROM Clientes
+		WHERE telefono LIKE '6003%';
+
+
