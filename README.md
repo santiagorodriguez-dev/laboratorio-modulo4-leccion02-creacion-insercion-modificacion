@@ -47,11 +47,6 @@ La empresa requiere una base de datos que contenga las siguientes entidades:
 
 - **Regiones**: Información sobre las diferentes regiones a las que se realizan envíos.
 
-El esquema de la BBDD es el siguiente:
-
-![esquema](https://github.com/Hack-io-Data/Imagenes/blob/main/02-Imagenes/SQL/Esquema-lab-logistica.png?raw=true)
-
-
 ## Ejercicios
 
 ### Ejercicio 1: Creación de la Base de Datos y Tablas
